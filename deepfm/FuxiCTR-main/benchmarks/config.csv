@@ -1,0 +1,14 @@
+ 20221012-165238,[command] python run_expid.py --expid AFM_test,[exp_id] AFM_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.686105 - AUC: 0.997396,[test] logloss: 0.686105 - AUC: 0.997396
+ 20221012-165302,[command] python run_expid.py --expid AFN_test,[exp_id] AFN_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 15.291059 - AUC: 0.510417,[test] logloss: 15.291059 - AUC: 0.510417
+ 20221012-165325,[command] python run_expid.py --expid AutoInt_test,[exp_id] AutoInt_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.689391 - AUC: 0.677083,[test] logloss: 0.689391 - AUC: 0.677083
+ 20221012-165349,[command] python run_expid.py --expid CCPM_test,[exp_id] CCPM_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.823308 - AUC: 0.617188,[test] logloss: 0.823308 - AUC: 0.617188
+ 20221012-165413,[command] python run_expid.py --expid DCN_test,[exp_id] DCN_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.679936 - AUC: 1.000000,[test] logloss: 0.679936 - AUC: 1.000000
+ 20221012-165437,[command] python run_expid.py --expid DeepCrossing_test,[exp_id] DeepCrossing_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.681606 - AUC: 0.781250,[test] logloss: 0.681606 - AUC: 0.781250
+ 20221012-165501,[command] python run_expid.py --expid DeepFM_test,[exp_id] DeepFM_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.683403 - AUC: 1.000000,[test] logloss: 0.683403 - AUC: 1.000000
+ 20221012-165525,[command] python run_expid.py --expid DNN_test,[exp_id] DNN_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.685435 - AUC: 0.906250,[test] logloss: 0.685435 - AUC: 0.906250
+ 20221012-165549,[command] python run_expid.py --expid FFM_test,[exp_id] FFM_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.686127 - AUC: 0.986979,[test] logloss: 0.686127 - AUC: 0.986979
+ 20221012-165613,[command] python run_expid.py --expid FGCNN_test,[exp_id] FGCNN_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.661081 - AUC: 0.460938,[test] logloss: 0.661081 - AUC: 0.460938
+ 20221012-165637,[command] python run_expid.py --expid FiBiNET_test,[exp_id] FiBiNET_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.683915 - AUC: 0.960938,[test] logloss: 0.683915 - AUC: 0.960938
+ 20221012-165701,[command] python run_expid.py --expid FiGNN_test,[exp_id] FiGNN_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.615732 - AUC: 0.997396,[test] logloss: 0.615732 - AUC: 0.997396
+ 20221012-165725,[command] python run_expid.py --expid FM_test,[exp_id] FM_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.686326 - AUC: 0.901042,[test] logloss: 0.686326 - AUC: 0.901042
+ 20221012-165749,[command] python run_expid.py --expid FwFM_test,[exp_id] FwFM_test,[dataset_id] taobao_tiny,[train] N.A.,[val] logloss: 0.688837 - AUC: 0.994792,[test] logloss: 0.688837 - AUC: 0.994792
