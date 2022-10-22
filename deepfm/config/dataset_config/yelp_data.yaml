@@ -1,0 +1,25 @@
+### Tiny data for tests only
+yelp_no_feature:
+    data_root: ../data/
+    data_format: csv
+    train_data: ../data/train.csv
+    valid_data: ../data/valid.csv
+    # test_data: ../data/tiny_data/test_sample.csv
+    min_categr_count: 1
+    feature_cols:
+        [{name: [user_id, business_id],
+                 active: True, dtype: str, type: categorical}]
+    label_col: {name: target, dtype: float}
+
+yelp_feature:
+    data_root: ../data/
+    data_format: csv
+    train_data: ../data/train.csv
+    valid_data: ../data/valid.csv
+    # test_data: ../data/tiny_data/test_sample.csv
+    min_categr_count: 1
+    feature_cols:
+        [{name: [user_id, business_id],
+                 active: True, dtype: str, type: categorical}]
+    label_col: {name: target, dtype: float}
+
