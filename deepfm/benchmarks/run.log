@@ -1,158 +1,0 @@
-Enumerate all tuner configurations done.
-2022-10-21 18:42:46,839 P87645 INFO {
-    "batch_norm": "False",
-    "batch_size": "128",
-    "data_format": "csv",
-    "data_root": "../data/",
-    "dataset_id": "yelp_no_feature_3d3ae056",
-    "debug": "False",
-    "embedding_dim": "16",
-    "embedding_regularizer": "0",
-    "epochs": "1",
-    "every_x_epochs": "1",
-    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
-    "gpu": "-1",
-    "hidden_activations": "relu",
-    "hidden_units": "[300, 300, 300]",
-    "label_col": "{'dtype': 'float', 'name': 'target'}",
-    "learning_rate": "0.001",
-    "loss": "binary_crossentropy",
-    "metrics": "['logloss', 'AUC']",
-    "min_categr_count": "1",
-    "model": "DeepFM",
-    "model_id": "DeepFM_yelp_no_feature_001_22ba5a0c",
-    "model_root": "../models/",
-    "monitor": "{'AUC': 1, 'logloss': -1}",
-    "monitor_mode": "max",
-    "net_dropout": "0",
-    "net_regularizer": "0",
-    "num_workers": "3",
-    "optimizer": "adam",
-    "patience": "2",
-    "pickle_feature_encoder": "True",
-    "save_best_only": "True",
-    "seed": "2019",
-    "shuffle": "True",
-    "task": "binary_classification",
-    "train_data": "../data/train.csv",
-    "use_hdf5": "True",
-    "valid_data": "../data/valid.csv",
-    "verbose": "1",
-    "version": "pytorch"
-}
-2022-10-21 18:42:46,840 P87645 INFO Set up feature encoder...
-2022-10-21 18:42:46,840 P87645 INFO Reading file: ../data/train.csv
-2022-10-21 18:42:46,925 P87645 INFO Reading file: ../data/valid.csv
-2022-10-21 18:42:46,965 P87645 INFO Preprocess feature columns...
-2022-10-21 18:42:46,966 P87645 INFO Fit feature encoder...
-2022-10-21 18:42:46,967 P87645 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'user_id', 'type': 'categorical'}
-2022-10-21 18:42:46,972 P87645 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'business_id', 'type': 'categorical'}
-2022-10-21 18:42:46,975 P87645 INFO Set feature index...
-2022-10-21 18:42:46,975 P87645 INFO Pickle feature_encoder: ../data/yelp_no_feature_3d3ae056/feature_encoder.pkl
-2022-10-21 18:42:46,976 P87645 INFO Save feature_map to json: ../data/yelp_no_feature_3d3ae056/feature_map.json
-2022-10-21 18:42:46,976 P87645 INFO Set feature encoder done.
-2022-10-21 18:42:46,976 P87645 INFO Transform feature columns...
-2022-10-21 18:42:46,978 P87645 INFO Saving data to h5: ../data/yelp_no_feature_3d3ae056/train.h5
-2022-10-21 18:42:46,999 P87645 INFO Preprocess feature columns...
-2022-10-21 18:42:47,000 P87645 INFO Transform feature columns...
-2022-10-21 18:42:47,001 P87645 INFO Saving data to h5: ../data/yelp_no_feature_3d3ae056/valid.h5
-2022-10-21 18:42:47,021 P87645 INFO Transform csv data to h5 done.
-2022-10-21 18:42:47,022 P87645 INFO Loading data...
-2022-10-21 18:42:47,022 P87645 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
-2022-10-21 18:42:47,023 P87645 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
-2022-10-21 18:42:47,023 P87645 INFO Train samples: total/8000, pos/5503, neg/2497, ratio/68.79%, blocks/1
-2022-10-21 18:42:47,023 P87645 INFO Validation samples: total/2000, pos/1401, neg/599, ratio/70.05%, blocks/1
-2022-10-21 18:42:47,023 P87645 INFO Loading train data done.
-2022-10-21 18:42:47,031 P87645 INFO Total number of parameters: 368162.
-2022-10-21 18:42:47,031 P87645 INFO Start training: 63 batches/epoch
-2022-10-21 18:42:47,031 P87645 INFO ************ Epoch=1 start ************
-  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:01<01:59,  1.93s/it] 59%|█████▊    | 37/63 [00:02<00:01, 25.30it/s]
-  0%|          | 0/16 [00:00<?, ?it/s][A
-  6%|▋         | 1/16 [00:00<00:12,  1.23it/s][A100%|██████████| 16/16 [00:15<00:00,  1.01it/s]
-2022-10-21 18:43:04,976 P87645 INFO [Metrics] logloss: 0.597148 - AUC: 0.605399
-2022-10-21 18:43:04,977 P87645 INFO Save best model: monitor(max): 0.008251
-2022-10-21 18:43:04,982 P87645 INFO --- 63/63 batches finished ---
-100%|██████████| 63/63 [00:17<00:00,  3.05it/s]100%|██████████| 63/63 [00:32<00:00,  1.91it/s]
-2022-10-21 18:43:19,989 P87645 INFO Train loss: 0.622188
-2022-10-21 18:43:19,990 P87645 INFO ************ Epoch=1 end ************
-2022-10-21 18:43:19,990 P87645 INFO Training finished.
-2022-10-21 18:43:19,990 P87645 INFO Load best model: /Users/jun/Library/Mobile Documents/com~apple~CloudDocs/jun_folder/skills/mids/w210-capstone/proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_001_22ba5a0c.model
-2022-10-21 18:43:19,995 P87645 INFO ****** Validation evaluation ******
-  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:01<02:01,  1.95s/it]100%|██████████| 63/63 [00:16<00:00,  3.71it/s]
-2022-10-21 18:43:37,009 P87645 INFO [Metrics] logloss: 0.528518 - AUC: 0.904376
-  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:00<00:12,  1.21it/s]100%|██████████| 16/16 [00:15<00:00,  1.01it/s]
-2022-10-21 18:43:52,863 P87645 INFO [Metrics] logloss: 0.597148 - AUC: 0.605399
-2022-10-21 18:43:52,907 P87645 INFO ******** Test evaluation ********
-2022-10-21 18:43:52,907 P87645 INFO Loading data...
-2022-10-21 18:43:52,908 P87645 INFO Loading test data done.
-2022-10-21 18:43:56,826 P88168 INFO {
-    "batch_norm": "False",
-    "batch_size": "128",
-    "data_format": "csv",
-    "data_root": "../data/",
-    "dataset_id": "yelp_no_feature_3d3ae056",
-    "debug": "False",
-    "embedding_dim": "8",
-    "embedding_regularizer": "0",
-    "epochs": "1",
-    "every_x_epochs": "1",
-    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
-    "gpu": "-1",
-    "hidden_activations": "relu",
-    "hidden_units": "[300, 300, 300]",
-    "label_col": "{'dtype': 'float', 'name': 'target'}",
-    "learning_rate": "0.001",
-    "loss": "binary_crossentropy",
-    "metrics": "['logloss', 'AUC']",
-    "min_categr_count": "1",
-    "model": "DeepFM",
-    "model_id": "DeepFM_yelp_no_feature_002_4e0dd65c",
-    "model_root": "../models/",
-    "monitor": "{'AUC': 1, 'logloss': -1}",
-    "monitor_mode": "max",
-    "net_dropout": "0",
-    "net_regularizer": "0",
-    "num_workers": "3",
-    "optimizer": "adam",
-    "patience": "2",
-    "pickle_feature_encoder": "True",
-    "save_best_only": "True",
-    "seed": "2019",
-    "shuffle": "True",
-    "task": "binary_classification",
-    "train_data": "../data/train.csv",
-    "use_hdf5": "True",
-    "valid_data": "../data/valid.csv",
-    "verbose": "1",
-    "version": "pytorch"
-}
-2022-10-21 18:43:56,827 P88168 INFO Set up feature encoder...
-2022-10-21 18:43:56,827 P88168 INFO Load feature_map from json: ../data/yelp_no_feature_3d3ae056/feature_map.json
-2022-10-21 18:43:56,827 P88168 INFO Loading data...
-2022-10-21 18:43:56,828 P88168 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
-2022-10-21 18:43:56,829 P88168 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
-2022-10-21 18:43:56,829 P88168 INFO Train samples: total/8000, pos/5503, neg/2497, ratio/68.79%, blocks/1
-2022-10-21 18:43:56,830 P88168 INFO Validation samples: total/2000, pos/1401, neg/599, ratio/70.05%, blocks/1
-2022-10-21 18:43:56,830 P88168 INFO Loading train data done.
-2022-10-21 18:43:56,836 P88168 INFO Total number of parameters: 279898.
-2022-10-21 18:43:56,836 P88168 INFO Start training: 63 batches/epoch
-2022-10-21 18:43:56,836 P88168 INFO ************ Epoch=1 start ************
-  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:01<01:56,  1.88s/it] 68%|██████▊   | 43/63 [00:01<00:00, 30.15it/s]
-  0%|          | 0/16 [00:00<?, ?it/s][A
-  6%|▋         | 1/16 [00:00<00:12,  1.20it/s][A100%|██████████| 16/16 [00:15<00:00,  1.01it/s]
-2022-10-21 18:44:14,729 P88168 INFO [Metrics] logloss: 0.596688 - AUC: 0.609779
-2022-10-21 18:44:14,729 P88168 INFO Save best model: monitor(max): 0.013091
-2022-10-21 18:44:14,734 P88168 INFO --- 63/63 batches finished ---
- 68%|██████▊   | 43/63 [00:20<00:00, 30.15it/s]100%|██████████| 63/63 [00:32<00:00,  1.91it/s]
-2022-10-21 18:44:29,742 P88168 INFO Train loss: 0.627000
-2022-10-21 18:44:29,743 P88168 INFO ************ Epoch=1 end ************
-2022-10-21 18:44:29,743 P88168 INFO Training finished.
-2022-10-21 18:44:29,743 P88168 INFO Load best model: /Users/jun/Library/Mobile Documents/com~apple~CloudDocs/jun_folder/skills/mids/w210-capstone/proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_002_4e0dd65c.model
-2022-10-21 18:44:29,748 P88168 INFO ****** Validation evaluation ******
-  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:01<02:01,  1.96s/it]100%|██████████| 63/63 [00:16<00:00,  3.71it/s]
-2022-10-21 18:44:46,759 P88168 INFO [Metrics] logloss: 0.539710 - AUC: 0.906848
-  0%|          | 0/16 [00:00<?, ?it/s]  6%|▋         | 1/16 [00:00<00:12,  1.24it/s]100%|██████████| 16/16 [00:15<00:00,  1.01it/s]
-2022-10-21 18:45:02,592 P88168 INFO [Metrics] logloss: 0.596688 - AUC: 0.609779
-2022-10-21 18:45:02,661 P88168 INFO ******** Test evaluation ********
-2022-10-21 18:45:02,661 P88168 INFO Loading data...
-2022-10-21 18:45:02,661 P88168 INFO Loading test data done.

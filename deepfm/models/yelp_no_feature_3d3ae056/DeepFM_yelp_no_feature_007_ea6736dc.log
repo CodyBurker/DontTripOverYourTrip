@@ -1,0 +1,77 @@
+2022-10-22 06:59:43,161 P10844 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_no_feature_3d3ae056",
+    "debug": "False",
+    "embedding_dim": "16",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_no_feature_007_ea6736dc",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-10-22 06:59:43,163 P10844 INFO Set up feature encoder...
+2022-10-22 06:59:43,163 P10844 INFO Load feature_map from json: ../data/yelp_no_feature_3d3ae056/feature_map.json
+2022-10-22 06:59:43,167 P10844 INFO Loading data...
+2022-10-22 06:59:43,170 P10844 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
+2022-10-22 06:59:43,268 P10844 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
+2022-10-22 06:59:43,305 P10844 INFO Train samples: total/684064, pos/472869, neg/211195, ratio/69.13%, blocks/1
+2022-10-22 06:59:43,305 P10844 INFO Validation samples: total/171016, pos/118244, neg/52772, ratio/69.14%, blocks/1
+2022-10-22 06:59:43,305 P10844 INFO Loading train data done.
+2022-10-22 06:59:45,850 P10844 INFO Total number of parameters: 4161832.
+2022-10-22 06:59:45,850 P10844 INFO Start training: 669 batches/epoch
+2022-10-22 06:59:45,850 P10844 INFO ************ Epoch=1 start ************
+2022-10-22 06:59:52,892 P10844 INFO [Metrics] logloss: 0.533178 - AUC: 0.743600
+2022-10-22 06:59:52,892 P10844 INFO Save best model: monitor(max): 0.210421
+2022-10-22 06:59:53,038 P10844 INFO --- 669/669 batches finished ---
+2022-10-22 06:59:53,077 P10844 INFO Train loss: 0.552043
+2022-10-22 06:59:53,077 P10844 INFO ************ Epoch=1 end ************
+2022-10-22 06:59:59,089 P10844 INFO [Metrics] logloss: 0.553450 - AUC: 0.727230
+2022-10-22 06:59:59,090 P10844 INFO Monitor(max) STOP: 0.173779 !
+2022-10-22 06:59:59,090 P10844 INFO Reduce learning rate on plateau: 0.000100
+2022-10-22 06:59:59,090 P10844 INFO --- 669/669 batches finished ---
+2022-10-22 06:59:59,130 P10844 INFO Train loss: 0.426003
+2022-10-22 06:59:59,130 P10844 INFO ************ Epoch=2 end ************
+2022-10-22 07:00:04,945 P10844 INFO [Metrics] logloss: 0.654697 - AUC: 0.708053
+2022-10-22 07:00:04,945 P10844 INFO Monitor(max) STOP: 0.053355 !
+2022-10-22 07:00:04,945 P10844 INFO Reduce learning rate on plateau: 0.000010
+2022-10-22 07:00:04,945 P10844 INFO Early stopping at epoch=3
+2022-10-22 07:00:04,945 P10844 INFO --- 669/669 batches finished ---
+2022-10-22 07:00:04,990 P10844 INFO Train loss: 0.378133
+2022-10-22 07:00:04,990 P10844 INFO Training finished.
+2022-10-22 07:00:04,990 P10844 INFO Load best model: /root/w210_proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_007_ea6736dc.model
+2022-10-22 07:00:05,007 P10844 INFO ****** Validation evaluation ******
+2022-10-22 07:00:07,825 P10844 INFO [Metrics] logloss: 0.464246 - AUC: 0.835583
+2022-10-22 07:00:08,664 P10844 INFO [Metrics] logloss: 0.533178 - AUC: 0.743600
+2022-10-22 07:00:08,731 P10844 INFO ******** Test evaluation ********
+2022-10-22 07:00:08,731 P10844 INFO Loading data...
+2022-10-22 07:00:08,732 P10844 INFO Loading test data done.

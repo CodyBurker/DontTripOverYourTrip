@@ -1,0 +1,77 @@
+2022-10-22 06:57:08,024 P1932 INFO {
+    "batch_norm": "True",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_no_feature_3d3ae056",
+    "debug": "False",
+    "embedding_dim": "8",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_no_feature_002_5894b0e3",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-10-22 06:57:08,026 P1932 INFO Set up feature encoder...
+2022-10-22 06:57:08,027 P1932 INFO Load feature_map from json: ../data/yelp_no_feature_3d3ae056/feature_map.json
+2022-10-22 06:57:08,028 P1932 INFO Loading data...
+2022-10-22 06:57:08,035 P1932 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
+2022-10-22 06:57:08,142 P1932 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
+2022-10-22 06:57:08,183 P1932 INFO Train samples: total/684064, pos/472869, neg/211195, ratio/69.13%, blocks/1
+2022-10-22 06:57:08,183 P1932 INFO Validation samples: total/171016, pos/118244, neg/52772, ratio/69.14%, blocks/1
+2022-10-22 06:57:08,183 P1932 INFO Loading train data done.
+2022-10-22 06:57:10,663 P1932 INFO Total number of parameters: 2356688.
+2022-10-22 06:57:10,664 P1932 INFO Start training: 669 batches/epoch
+2022-10-22 06:57:10,664 P1932 INFO ************ Epoch=1 start ************
+2022-10-22 06:57:18,475 P1932 INFO [Metrics] logloss: 0.543729 - AUC: 0.729113
+2022-10-22 06:57:18,476 P1932 INFO Save best model: monitor(max): 0.185384
+2022-10-22 06:57:18,593 P1932 INFO --- 669/669 batches finished ---
+2022-10-22 06:57:18,623 P1932 INFO Train loss: 0.565076
+2022-10-22 06:57:18,624 P1932 INFO ************ Epoch=1 end ************
+2022-10-22 06:57:24,753 P1932 INFO [Metrics] logloss: 0.560277 - AUC: 0.724526
+2022-10-22 06:57:24,754 P1932 INFO Monitor(max) STOP: 0.164249 !
+2022-10-22 06:57:24,754 P1932 INFO Reduce learning rate on plateau: 0.000100
+2022-10-22 06:57:24,754 P1932 INFO --- 669/669 batches finished ---
+2022-10-22 06:57:24,795 P1932 INFO Train loss: 0.449085
+2022-10-22 06:57:24,795 P1932 INFO ************ Epoch=2 end ************
+2022-10-22 06:57:30,790 P1932 INFO [Metrics] logloss: 0.679086 - AUC: 0.705502
+2022-10-22 06:57:30,790 P1932 INFO Monitor(max) STOP: 0.026416 !
+2022-10-22 06:57:30,790 P1932 INFO Reduce learning rate on plateau: 0.000010
+2022-10-22 06:57:30,790 P1932 INFO Early stopping at epoch=3
+2022-10-22 06:57:30,790 P1932 INFO --- 669/669 batches finished ---
+2022-10-22 06:57:30,827 P1932 INFO Train loss: 0.323737
+2022-10-22 06:57:30,827 P1932 INFO Training finished.
+2022-10-22 06:57:30,827 P1932 INFO Load best model: /root/w210_proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_002_5894b0e3.model
+2022-10-22 06:57:30,919 P1932 INFO ****** Validation evaluation ******
+2022-10-22 06:57:33,857 P1932 INFO [Metrics] logloss: 0.468721 - AUC: 0.837734
+2022-10-22 06:57:34,705 P1932 INFO [Metrics] logloss: 0.543729 - AUC: 0.729113
+2022-10-22 06:57:34,770 P1932 INFO ******** Test evaluation ********
+2022-10-22 06:57:34,770 P1932 INFO Loading data...
+2022-10-22 06:57:34,772 P1932 INFO Loading test data done.

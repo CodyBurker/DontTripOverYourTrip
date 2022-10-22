@@ -1,0 +1,82 @@
+2022-10-22 07:01:23,233 P16589 INFO {
+    "batch_norm": "True",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_no_feature_3d3ae056",
+    "debug": "False",
+    "embedding_dim": "8",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_no_feature_010_94bf40f2",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-10-22 07:01:23,235 P16589 INFO Set up feature encoder...
+2022-10-22 07:01:23,235 P16589 INFO Load feature_map from json: ../data/yelp_no_feature_3d3ae056/feature_map.json
+2022-10-22 07:01:23,236 P16589 INFO Loading data...
+2022-10-22 07:01:23,239 P16589 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
+2022-10-22 07:01:23,340 P16589 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
+2022-10-22 07:01:23,379 P16589 INFO Train samples: total/684064, pos/472869, neg/211195, ratio/69.13%, blocks/1
+2022-10-22 07:01:23,379 P16589 INFO Validation samples: total/171016, pos/118244, neg/52772, ratio/69.14%, blocks/1
+2022-10-22 07:01:23,379 P16589 INFO Loading train data done.
+2022-10-22 07:01:25,824 P16589 INFO Total number of parameters: 2356688.
+2022-10-22 07:01:25,824 P16589 INFO Start training: 669 batches/epoch
+2022-10-22 07:01:25,824 P16589 INFO ************ Epoch=1 start ************
+2022-10-22 07:01:34,223 P16589 INFO [Metrics] logloss: 0.552590 - AUC: 0.715350
+2022-10-22 07:01:34,223 P16589 INFO Save best model: monitor(max): 0.162760
+2022-10-22 07:01:34,326 P16589 INFO --- 669/669 batches finished ---
+2022-10-22 07:01:34,362 P16589 INFO Train loss: 0.671169
+2022-10-22 07:01:34,362 P16589 INFO ************ Epoch=1 end ************
+2022-10-22 07:01:41,052 P16589 INFO [Metrics] logloss: 0.551270 - AUC: 0.718637
+2022-10-22 07:01:41,052 P16589 INFO Save best model: monitor(max): 0.167367
+2022-10-22 07:01:41,200 P16589 INFO --- 669/669 batches finished ---
+2022-10-22 07:01:41,255 P16589 INFO Train loss: 0.722087
+2022-10-22 07:01:41,255 P16589 INFO ************ Epoch=2 end ************
+2022-10-22 07:01:48,179 P16589 INFO [Metrics] logloss: 0.556581 - AUC: 0.710537
+2022-10-22 07:01:48,180 P16589 INFO Monitor(max) STOP: 0.153956 !
+2022-10-22 07:01:48,180 P16589 INFO Reduce learning rate on plateau: 0.000100
+2022-10-22 07:01:48,180 P16589 INFO --- 669/669 batches finished ---
+2022-10-22 07:01:48,229 P16589 INFO Train loss: 0.835461
+2022-10-22 07:01:48,230 P16589 INFO ************ Epoch=3 end ************
+2022-10-22 07:01:55,101 P16589 INFO [Metrics] logloss: 0.570836 - AUC: 0.718767
+2022-10-22 07:01:55,101 P16589 INFO Monitor(max) STOP: 0.147930 !
+2022-10-22 07:01:55,102 P16589 INFO Reduce learning rate on plateau: 0.000010
+2022-10-22 07:01:55,102 P16589 INFO Early stopping at epoch=4
+2022-10-22 07:01:55,102 P16589 INFO --- 669/669 batches finished ---
+2022-10-22 07:01:55,149 P16589 INFO Train loss: 0.801912
+2022-10-22 07:01:55,149 P16589 INFO Training finished.
+2022-10-22 07:01:55,149 P16589 INFO Load best model: /root/w210_proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_010_94bf40f2.model
+2022-10-22 07:01:55,248 P16589 INFO ****** Validation evaluation ******
+2022-10-22 07:01:58,172 P16589 INFO [Metrics] logloss: 0.503758 - AUC: 0.792268
+2022-10-22 07:01:59,006 P16589 INFO [Metrics] logloss: 0.551270 - AUC: 0.718637
+2022-10-22 07:01:59,064 P16589 INFO ******** Test evaluation ********
+2022-10-22 07:01:59,064 P16589 INFO Loading data...
+2022-10-22 07:01:59,065 P16589 INFO Loading test data done.
