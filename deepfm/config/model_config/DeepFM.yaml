@@ -5,7 +5,7 @@ DeepFM_base:
     metrics: ['logloss', 'AUC']
     task: binary_classification
     optimizer: adam
-    hidden_units: [300, 300, 300]
+    hidden_units: [400, 400, 400]
     hidden_activations: relu
     net_regularizer: 0
     embedding_regularizer: 0
