@@ -20,6 +20,9 @@ yelp_feature:
     min_categr_count: 1
     feature_cols:
         [{name: [user_id, business_id],
-                 active: True, dtype: str, type: categorical}]
+                 active: True, dtype: str, type: categorical},
+         {name: postal_code, active: True, dtype: float, type: categorical},
+         {name: [user_review_count, average_stars, gender_score, philly_reviews, philly_share_of_reviews, business_stars, business_review_count],
+                 active: True, dtype: float, type: numeric}]
     label_col: {name: target, dtype: float}
 
