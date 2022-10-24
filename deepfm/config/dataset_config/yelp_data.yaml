@@ -55,3 +55,32 @@ yelp_all_feature:
                  active: True, dtype: float, type: numeric}]
     label_col: {name: target, dtype: float}
 
+yelp_business_feature_no_reviewcount:
+    data_root: ../data/
+    data_format: csv
+    train_data: ../data/train.csv
+    valid_data: ../data/valid.csv
+    # test_data: ../data/tiny_data/test_sample.csv
+    min_categr_count: 1
+    feature_cols:
+        [{name: [user_id, business_id, bucketed_sentiment_scores_received, postal_code],
+                 active: True, dtype: str, type: categorical},
+         {name: [business_stars],
+                 active: True, dtype: float, type: numeric}]
+    label_col: {name: target, dtype: float}
+
+yelp_all_feature_no_reviewcount:
+    data_root: ../data/
+    data_format: csv
+    train_data: ../data/train.csv
+    valid_data: ../data/valid.csv
+    # test_data: ../data/tiny_data/test_sample.csv
+    min_categr_count: 1
+    feature_cols:
+        [{name: [user_id, business_id, bucketed_sentiment_scores_received, postal_code],
+                 active: True, dtype: str, type: categorical},
+                   # {name: postal_code, active: True, dtype: float, type: categorical},
+         {name: [average_stars, philly_reviews, philly_share_of_reviews, gender_score, 
+           business_stars],
+                 active: True, dtype: float, type: numeric}]
+    label_col: {name: target, dtype: float}
