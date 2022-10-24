@@ -1,6 +1,6 @@
 base_config: ../config/ # the location of base config
 base_expid: DeepFM_base # the expid of default hyper-parameters
-dataset_id: yelp_all_feature # the dataset_id used
+dataset_id: yelp_business_feature # the dataset_id used
 
 tuner_space:
     model_root: '../models/' # the value will override the default value in FM_test
