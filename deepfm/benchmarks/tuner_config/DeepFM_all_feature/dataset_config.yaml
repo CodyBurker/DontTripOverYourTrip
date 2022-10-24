@@ -1,0 +1,17 @@
+yelp_all_feature_2cca3d6c:
+    data_format: csv
+    data_root: ../data/
+    feature_cols:
+    -   active: true
+        dtype: str
+        name: [user_id, business_id, bucketed_sentiment_scores_received, postal_code]
+        type: categorical
+    -   active: true
+        dtype: float
+        name: [average_stars, philly_reviews, philly_share_of_reviews, gender_score,
+            business_stars, business_review_count]
+        type: numeric
+    label_col: {dtype: float, name: target}
+    min_categr_count: 1
+    train_data: ../data/train.csv
+    valid_data: ../data/valid.csv

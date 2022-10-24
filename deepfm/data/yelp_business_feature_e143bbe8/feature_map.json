@@ -1,0 +1,42 @@
+{
+    "dataset_id": "yelp_business_feature_e143bbe8",
+    "num_fields": 6,
+    "num_features": 225213,
+    "input_length": 6,
+    "feature_specs": {
+        "user_id": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 214745,
+            "index": 0
+        },
+        "business_id": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 10391,
+            "index": 1
+        },
+        "bucketed_sentiment_scores_received": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 7,
+            "index": 2
+        },
+        "postal_code": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 68,
+            "index": 3
+        },
+        "business_stars": {
+            "source": "",
+            "type": "numeric",
+            "index": 4
+        },
+        "business_review_count": {
+            "source": "",
+            "type": "numeric",
+            "index": 5
+        }
+    }
+}
