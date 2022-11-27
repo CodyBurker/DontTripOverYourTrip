@@ -64,12 +64,67 @@ def split_train_test(train_ddf=None, valid_ddf=None, test_ddf=None, valid_size=0
         train_ddf = train_ddf.loc[instance_IDs, :].reset_index()
     return train_ddf, valid_ddf, test_ddf
 
+#  def build_dataset(feature_encoder, train_data=None, valid_data=None, test_data=None, valid_size=0,
+#                    test_size=0, split_type="sequential", **kwargs):
+#      """ Build feature_map and transform h5 data """
+#      # Load csv data
+#      train_ddf = feature_encoder.read_csv(train_data)
+#      valid_ddf = feature_encoder.read_csv(valid_data) if valid_data else None
+#      test_ddf = feature_encoder.read_csv(test_data) if test_data else None
+#
+#      # Split data for train/validation/test
+#      if valid_size > 0 or test_size > 0:
+#          train_ddf, valid_ddf, test_ddf = split_train_test(train_ddf, valid_ddf, test_ddf,
+#                                                            valid_size, test_size, split_type)
+#      # fit and transform train_ddf
+#      train_ddf = feature_encoder.preprocess(train_ddf)
+#      train_array = feature_encoder.fit_transform(train_ddf, **kwargs)
+#      block_size = int(kwargs.get("data_block_size", 0))
+#      if block_size > 0:
+#          block_id = 0
+#          for idx in range(0, len(train_array), block_size):
+#              save_hdf5(train_array[idx:(idx + block_size), :], os.path.join(feature_encoder.data_dir, 'train_part_{}.h5'.format(block_id)))
+#              block_id += 1
+#      else:
+#          save_hdf5(train_array, os.path.join(feature_encoder.data_dir, 'train.h5'))
+#      del train_array, train_ddf
+#      gc.collect()
+#
+#      # Transfrom valid_ddf
+#      if valid_ddf is not None:
+#          valid_ddf = feature_encoder.preprocess(valid_ddf)
+#          valid_array = feature_encoder.transform(valid_ddf)
+#          if block_size > 0:
+#              block_id = 0
+#              for idx in range(0, len(valid_array), block_size):
+#                  save_hdf5(valid_array[idx:(idx + block_size), :], os.path.join(feature_encoder.data_dir, 'valid_part_{}.h5'.format(block_id)))
+#                  block_id += 1
+#          else:
+#              save_hdf5(valid_array, os.path.join(feature_encoder.data_dir, 'valid.h5'))
+#          del valid_array, valid_ddf
+#          gc.collect()
+#
+#      # Transfrom test_ddf
+#      if test_ddf is not None:
+#          test_ddf = feature_encoder.preprocess(test_ddf)
+#          test_array = feature_encoder.transform(test_ddf)
+#          if block_size > 0:
+#              block_id = 0
+#              for idx in range(0, len(test_array), block_size):
+#                  save_hdf5(test_array[idx:(idx + block_size), :], os.path.join(feature_encoder.data_dir, 'test_part_{}.h5'.format(block_id)))
+#                  block_id += 1
+#          else:
+#              save_hdf5(test_array, os.path.join(feature_encoder.data_dir, 'test.h5'))
+#          del test_array, test_ddf
+#          gc.collect()
+#      logging.info("Transform csv data to h5 done.")
+
 
 def build_dataset(feature_encoder, train_data=None, valid_data=None, test_data=None, valid_size=0, 
                   test_size=0, split_type="sequential", **kwargs):
     """ Build feature_map and transform h5 data """
     # Load csv data
-    train_ddf = feature_encoder.read_csv(train_data)
+    train_ddf = feature_encoder.read_csv(train_data) if train_data else None
     valid_ddf = feature_encoder.read_csv(valid_data) if valid_data else None
     test_ddf = feature_encoder.read_csv(test_data) if test_data else None
     
@@ -78,23 +133,25 @@ def build_dataset(feature_encoder, train_data=None, valid_data=None, test_data=N
         train_ddf, valid_ddf, test_ddf = split_train_test(train_ddf, valid_ddf, test_ddf, 
                                                           valid_size, test_size, split_type)
     # fit and transform train_ddf
-    train_ddf = feature_encoder.preprocess(train_ddf)
-    train_array = feature_encoder.fit_transform(train_ddf, **kwargs)
-    block_size = int(kwargs.get("data_block_size", 0))
-    if block_size > 0:
-        block_id = 0
-        for idx in range(0, len(train_array), block_size):
-            save_hdf5(train_array[idx:(idx + block_size), :], os.path.join(feature_encoder.data_dir, 'train_part_{}.h5'.format(block_id)))
-            block_id += 1
-    else:
-        save_hdf5(train_array, os.path.join(feature_encoder.data_dir, 'train.h5'))
-    del train_array, train_ddf
-    gc.collect()
+    if train_ddf is not None:
+        train_ddf = feature_encoder.preprocess(train_ddf)
+        train_array = feature_encoder.fit_transform(train_ddf, **kwargs)
+        block_size = int(kwargs.get("data_block_size", 0))
+        if block_size > 0:
+            block_id = 0
+            for idx in range(0, len(train_array), block_size):
+                save_hdf5(train_array[idx:(idx + block_size), :], os.path.join(feature_encoder.data_dir, 'train_part_{}.h5'.format(block_id)))
+                block_id += 1
+        else:
+            save_hdf5(train_array, os.path.join(feature_encoder.data_dir, 'train.h5'))
+        del train_array, train_ddf
+        gc.collect()
 
     # Transfrom valid_ddf
     if valid_ddf is not None:
         valid_ddf = feature_encoder.preprocess(valid_ddf)
         valid_array = feature_encoder.transform(valid_ddf)
+        block_size = int(kwargs.get("data_block_size", 0))
         if block_size > 0:
             block_id = 0
             for idx in range(0, len(valid_array), block_size):
@@ -109,6 +166,7 @@ def build_dataset(feature_encoder, train_data=None, valid_data=None, test_data=N
     if test_ddf is not None:
         test_ddf = feature_encoder.preprocess(test_ddf)
         test_array = feature_encoder.transform(test_ddf)
+        block_size = int(kwargs.get("data_block_size", 0))
         if block_size > 0:
             block_id = 0
             for idx in range(0, len(test_array), block_size):
@@ -119,7 +177,6 @@ def build_dataset(feature_encoder, train_data=None, valid_data=None, test_data=N
         del test_array, test_ddf
         gc.collect()
     logging.info("Transform csv data to h5 done.")
-
 
 def h5_generator(feature_map, stage="both", train_data=None, valid_data=None, test_data=None,
                  batch_size=32, shuffle=True, **kwargs):
