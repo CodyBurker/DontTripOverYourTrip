@@ -96,12 +96,12 @@ if __name__ == '__main__':
     gc.collect()
 
     # get evaluation results on test
-    logging.info('******** Test evaluation ********')
-    test_gen = datasets.h5_generator(feature_map, stage='test', **params)
-    if test_gen:
-        test_result = model.evaluate_generator(test_gen)
-    else:
-        test_gen = {}
+    #  logging.info('******** Test evaluation ********')
+    #  test_gen = datasets.h5_generator(feature_map, stage='test', **params)
+    #  if test_gen:
+    #      test_result = model.evaluate_generator(test_gen)
+    #  else:
+    #      test_gen = {}
     
     # save the results to csv
     result_file = Path(args['config']).name.replace(".yaml", "") + '.csv'
