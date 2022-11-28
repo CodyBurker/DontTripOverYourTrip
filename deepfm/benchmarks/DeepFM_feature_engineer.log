@@ -1,5 +1,5 @@
 Enumerate all tuner configurations done.
-2022-11-28 06:13:42,125 P3499 INFO {
+2022-11-28 07:24:08,584 P14592 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -40,44 +40,56 @@ Enumerate all tuner configurations done.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:13:42,127 P3499 INFO Set up feature encoder...
-2022-11-28 06:13:42,128 P3499 INFO Reading file: ../data/train.csv
-2022-11-28 06:13:44,143 P3499 INFO Reading file: ../data/valid.csv
-2022-11-28 06:13:44,625 P3499 INFO Preprocess feature columns...
-2022-11-28 06:13:44,780 P3499 INFO Fit feature encoder...
-2022-11-28 06:13:44,781 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'user_id_Categorify', 'type': 'categorical'}
-2022-11-28 06:13:45,273 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'business_id_Categorify', 'type': 'categorical'}
-2022-11-28 06:13:45,353 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'bucketed_sentiment_scores_received_Categorify', 'type': 'categorical'}
-2022-11-28 06:13:45,390 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'postal_code_Categorify', 'type': 'categorical'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'average_stars', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'philly_reviews_Norm', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'philly_share_of_reviews', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'gender_score', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'business_stars', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'business_review_count_Norm', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_postal_code', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_business_id', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_bucketed_sentiment_scores_received', 'type': 'numeric'}
-2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'CE_postal_code', 'type': 'numeric'}
-2022-11-28 06:13:45,441 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'CE_bucketed_sentiment_scores_received', 'type': 'numeric'}
-2022-11-28 06:13:45,441 P3499 INFO Set feature index...
-2022-11-28 06:13:45,441 P3499 INFO Pickle feature_encoder: ../data/yelp_feature_engineer_392d950c/feature_encoder.pkl
-2022-11-28 06:13:45,554 P3499 INFO Save feature_map to json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:13:45,562 P3499 INFO Set feature encoder done.
-2022-11-28 06:13:45,562 P3499 INFO Transform feature columns...
-2022-11-28 06:13:48,277 P3499 INFO Saving data to h5: ../data/yelp_feature_engineer_392d950c/train.h5
-2022-11-28 06:13:48,814 P3499 INFO Preprocess feature columns...
+2022-11-28 07:24:08,586 P14592 INFO Set up feature encoder...
+2022-11-28 07:24:08,588 P14592 INFO Reading file: ../data/train.csv
+2022-11-28 07:24:10,611 P14592 INFO Reading file: ../data/valid.csv
+2022-11-28 07:24:11,132 P14592 INFO Preprocess feature columns...
+2022-11-28 07:24:11,291 P14592 INFO Fit feature encoder...
+2022-11-28 07:24:11,291 P14592 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'user_id_Categorify', 'type': 'categorical'}
+2022-11-28 07:24:11,820 P14592 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'business_id_Categorify', 'type': 'categorical'}
+2022-11-28 07:24:11,900 P14592 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'bucketed_sentiment_scores_received_Categorify', 'type': 'categorical'}
+2022-11-28 07:24:11,937 P14592 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'postal_code_Categorify', 'type': 'categorical'}
+2022-11-28 07:24:11,984 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'average_stars', 'type': 'numeric'}
+2022-11-28 07:24:11,984 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'philly_reviews_Norm', 'type': 'numeric'}
+2022-11-28 07:24:11,984 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'philly_share_of_reviews', 'type': 'numeric'}
+2022-11-28 07:24:11,984 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'gender_score', 'type': 'numeric'}
+2022-11-28 07:24:11,984 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'business_stars', 'type': 'numeric'}
+2022-11-28 07:24:11,985 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'business_review_count_Norm', 'type': 'numeric'}
+2022-11-28 07:24:11,985 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_postal_code', 'type': 'numeric'}
+2022-11-28 07:24:11,985 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_business_id', 'type': 'numeric'}
+2022-11-28 07:24:11,985 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_bucketed_sentiment_scores_received', 'type': 'numeric'}
+2022-11-28 07:24:11,985 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'CE_postal_code', 'type': 'numeric'}
+2022-11-28 07:24:11,985 P14592 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'CE_bucketed_sentiment_scores_received', 'type': 'numeric'}
+2022-11-28 07:24:11,985 P14592 INFO Set feature index...
+2022-11-28 07:24:11,985 P14592 INFO Pickle feature_encoder: ../data/yelp_feature_engineer_392d950c/feature_encoder.pkl
+2022-11-28 07:24:12,102 P14592 INFO Save feature_map to json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:12,110 P14592 INFO Set feature encoder done.
+2022-11-28 07:24:12,110 P14592 INFO Transform feature columns...
+2022-11-28 07:24:14,761 P14592 INFO Saving data to h5: ../data/yelp_feature_engineer_392d950c/train.h5
+2022-11-28 07:24:15,262 P14592 INFO Preprocess feature columns...
 Traceback (most recent call last):
   File "run_expid.py", line 70, in <module>
     datasets.build_dataset(feature_encoder, **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 152, in build_dataset
     valid_ddf = feature_encoder.preprocess(valid_ddf)
-  File "../FuxiCTR-main/fuxictr/features.py", line 138, in preprocess
-    ddf[name] = self._fill_na(col, ddf[name])
-  File "../FuxiCTR-main/fuxictr/features.py", line 153, in _fill_na
-    raise RuntimeError("Feature column={} requires to assign na_value!".format(col["name"]))
-RuntimeError: Feature column=TE_business_id requires to assign na_value!
-2022-11-28 06:13:52,014 P3635 INFO {
+  File "../FuxiCTR-main/fuxictr/features.py", line 143, in preprocess
+    ddf = ddf.loc[:, active_cols]
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/indexing.py", line 1055, in _getitem_tuple
+    return self._getitem_tuple_same_dim(tup)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/indexing.py", line 750, in _getitem_tuple_same_dim
+    retval = getattr(retval, self.name)._getitem_axis(key, axis=i)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/indexing.py", line 1099, in _getitem_axis
+    return self._getitem_iterable(key, axis=axis)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/indexing.py", line 1037, in _getitem_iterable
+    keyarr, indexer = self._get_listlike_indexer(key, axis, raise_missing=False)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/indexing.py", line 1254, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis, raise_missing=raise_missing)
+  File "/opt/conda/lib/python3.6/site-packages/pandas/core/indexing.py", line 1316, in _validate_read_indexer
+    "Passing list-likes to .loc or [] with any missing labels "
+KeyError: "Passing list-likes to .loc or [] with any missing labels is no longer supported. The following labels were missing: Index(['CE_postal_code', 'CE_bucketed_sentiment_scores_received'], dtype='object'). See https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#deprecate-loc-reindex-listlike"
+2022-11-28 07:24:18,532 P14730 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -118,16 +130,16 @@ RuntimeError: Feature column=TE_business_id requires to assign na_value!
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:13:52,016 P3635 INFO Set up feature encoder...
-2022-11-28 06:13:52,017 P3635 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:13:52,018 P3635 INFO Loading data...
+2022-11-28 07:24:18,534 P14730 INFO Set up feature encoder...
+2022-11-28 07:24:18,535 P14730 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:18,536 P14730 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:13:57,075 P3771 INFO {
+2022-11-28 07:24:23,566 P14866 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -168,16 +180,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:13:57,077 P3771 INFO Set up feature encoder...
-2022-11-28 06:13:57,079 P3771 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:13:57,081 P3771 INFO Loading data...
+2022-11-28 07:24:23,568 P14866 INFO Set up feature encoder...
+2022-11-28 07:24:23,568 P14866 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:23,569 P14866 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:02,121 P3907 INFO {
+2022-11-28 07:24:28,573 P15002 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -218,16 +230,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:02,123 P3907 INFO Set up feature encoder...
-2022-11-28 06:14:02,123 P3907 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:02,125 P3907 INFO Loading data...
+2022-11-28 07:24:28,575 P15002 INFO Set up feature encoder...
+2022-11-28 07:24:28,575 P15002 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:28,577 P15002 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:07,042 P4043 INFO {
+2022-11-28 07:24:33,550 P15138 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -268,16 +280,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:07,043 P4043 INFO Set up feature encoder...
-2022-11-28 06:14:07,044 P4043 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:07,045 P4043 INFO Loading data...
+2022-11-28 07:24:33,552 P15138 INFO Set up feature encoder...
+2022-11-28 07:24:33,552 P15138 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:33,553 P15138 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:12,087 P4179 INFO {
+2022-11-28 07:24:38,606 P15274 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -318,16 +330,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:12,089 P4179 INFO Set up feature encoder...
-2022-11-28 06:14:12,090 P4179 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:12,091 P4179 INFO Loading data...
+2022-11-28 07:24:38,608 P15274 INFO Set up feature encoder...
+2022-11-28 07:24:38,611 P15274 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:38,615 P15274 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:17,156 P4315 INFO {
+2022-11-28 07:24:43,586 P15410 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -368,16 +380,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:17,158 P4315 INFO Set up feature encoder...
-2022-11-28 06:14:17,158 P4315 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:17,160 P4315 INFO Loading data...
+2022-11-28 07:24:43,587 P15410 INFO Set up feature encoder...
+2022-11-28 07:24:43,588 P15410 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:43,589 P15410 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:22,118 P4451 INFO {
+2022-11-28 07:24:48,574 P15546 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -418,16 +430,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:22,120 P4451 INFO Set up feature encoder...
-2022-11-28 06:14:22,120 P4451 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:22,122 P4451 INFO Loading data...
+2022-11-28 07:24:48,576 P15546 INFO Set up feature encoder...
+2022-11-28 07:24:48,579 P15546 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:48,584 P15546 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:27,170 P4591 INFO {
+2022-11-28 07:24:53,585 P15682 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -468,16 +480,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:27,172 P4591 INFO Set up feature encoder...
-2022-11-28 06:14:27,172 P4591 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:27,173 P4591 INFO Loading data...
+2022-11-28 07:24:53,587 P15682 INFO Set up feature encoder...
+2022-11-28 07:24:53,587 P15682 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:53,588 P15682 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:32,175 P4729 INFO {
+2022-11-28 07:24:58,553 P15818 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -518,16 +530,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:32,177 P4729 INFO Set up feature encoder...
-2022-11-28 06:14:32,177 P4729 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:32,178 P4729 INFO Loading data...
+2022-11-28 07:24:58,555 P15818 INFO Set up feature encoder...
+2022-11-28 07:24:58,555 P15818 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:24:58,556 P15818 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:37,116 P4865 INFO {
+2022-11-28 07:25:03,606 P15954 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -568,16 +580,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:37,117 P4865 INFO Set up feature encoder...
-2022-11-28 06:14:37,118 P4865 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:37,119 P4865 INFO Loading data...
+2022-11-28 07:25:03,608 P15954 INFO Set up feature encoder...
+2022-11-28 07:25:03,608 P15954 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:03,609 P15954 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:42,121 P5001 INFO {
+2022-11-28 07:25:08,633 P16090 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -618,16 +630,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:42,123 P5001 INFO Set up feature encoder...
-2022-11-28 06:14:42,123 P5001 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:42,124 P5001 INFO Loading data...
+2022-11-28 07:25:08,635 P16090 INFO Set up feature encoder...
+2022-11-28 07:25:08,635 P16090 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:08,636 P16090 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:47,181 P5137 INFO {
+2022-11-28 07:25:13,579 P16232 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -668,16 +680,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:47,183 P5137 INFO Set up feature encoder...
-2022-11-28 06:14:47,183 P5137 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:47,184 P5137 INFO Loading data...
+2022-11-28 07:25:13,581 P16232 INFO Set up feature encoder...
+2022-11-28 07:25:13,584 P16232 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:13,587 P16232 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:52,132 P5273 INFO {
+2022-11-28 07:25:18,619 P16368 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -718,16 +730,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:52,134 P5273 INFO Set up feature encoder...
-2022-11-28 06:14:52,137 P5273 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:52,140 P5273 INFO Loading data...
+2022-11-28 07:25:18,620 P16368 INFO Set up feature encoder...
+2022-11-28 07:25:18,620 P16368 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:18,622 P16368 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:14:57,189 P5409 INFO {
+2022-11-28 07:25:23,619 P16504 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -768,16 +780,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:14:57,191 P5409 INFO Set up feature encoder...
-2022-11-28 06:14:57,191 P5409 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:14:57,192 P5409 INFO Loading data...
+2022-11-28 07:25:23,621 P16504 INFO Set up feature encoder...
+2022-11-28 07:25:23,621 P16504 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:23,622 P16504 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:02,155 P5545 INFO {
+2022-11-28 07:25:28,627 P16640 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -818,16 +830,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:02,157 P5545 INFO Set up feature encoder...
-2022-11-28 06:15:02,157 P5545 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:02,158 P5545 INFO Loading data...
+2022-11-28 07:25:28,628 P16640 INFO Set up feature encoder...
+2022-11-28 07:25:28,629 P16640 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:28,630 P16640 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:07,157 P5681 INFO {
+2022-11-28 07:25:33,674 P16776 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -868,16 +880,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:07,159 P5681 INFO Set up feature encoder...
-2022-11-28 06:15:07,162 P5681 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:07,166 P5681 INFO Loading data...
+2022-11-28 07:25:33,676 P16776 INFO Set up feature encoder...
+2022-11-28 07:25:33,676 P16776 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:33,678 P16776 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:12,179 P5817 INFO {
+2022-11-28 07:25:38,651 P16912 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -918,16 +930,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:12,181 P5817 INFO Set up feature encoder...
-2022-11-28 06:15:12,182 P5817 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:12,183 P5817 INFO Loading data...
+2022-11-28 07:25:38,653 P16912 INFO Set up feature encoder...
+2022-11-28 07:25:38,653 P16912 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:38,654 P16912 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:17,144 P5953 INFO {
+2022-11-28 07:25:43,647 P17048 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -968,16 +980,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:17,146 P5953 INFO Set up feature encoder...
-2022-11-28 06:15:17,146 P5953 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:17,148 P5953 INFO Loading data...
+2022-11-28 07:25:43,648 P17048 INFO Set up feature encoder...
+2022-11-28 07:25:43,649 P17048 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:43,650 P17048 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:22,169 P6089 INFO {
+2022-11-28 07:25:48,692 P17184 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -1018,16 +1030,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:22,170 P6089 INFO Set up feature encoder...
-2022-11-28 06:15:22,171 P6089 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:22,172 P6089 INFO Loading data...
+2022-11-28 07:25:48,694 P17184 INFO Set up feature encoder...
+2022-11-28 07:25:48,694 P17184 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:48,696 P17184 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:27,194 P6225 INFO {
+2022-11-28 07:25:53,678 P17320 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -1068,16 +1080,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:27,195 P6225 INFO Set up feature encoder...
-2022-11-28 06:15:27,198 P6225 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:27,203 P6225 INFO Loading data...
+2022-11-28 07:25:53,680 P17320 INFO Set up feature encoder...
+2022-11-28 07:25:53,680 P17320 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:53,681 P17320 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:32,160 P6367 INFO {
+2022-11-28 07:25:58,681 P17456 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -1118,16 +1130,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:32,162 P6367 INFO Set up feature encoder...
-2022-11-28 06:15:32,162 P6367 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:32,164 P6367 INFO Loading data...
+2022-11-28 07:25:58,683 P17456 INFO Set up feature encoder...
+2022-11-28 07:25:58,685 P17456 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:25:58,690 P17456 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:37,212 P6503 INFO {
+2022-11-28 07:26:03,726 P17592 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -1168,16 +1180,16 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:37,214 P6503 INFO Set up feature encoder...
-2022-11-28 06:15:37,214 P6503 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:37,215 P6503 INFO Loading data...
+2022-11-28 07:26:03,728 P17592 INFO Set up feature encoder...
+2022-11-28 07:26:03,728 P17592 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:26:03,729 P17592 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
   File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
     assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
 AssertionError: invalid data files or paths.
-2022-11-28 06:15:42,212 P6639 INFO {
+2022-11-28 07:26:08,717 P17728 INFO {
     "batch_norm": "False",
     "batch_size": "1024",
     "data_format": "csv",
@@ -1218,9 +1230,9 @@ AssertionError: invalid data files or paths.
     "verbose": "1",
     "version": "pytorch"
 }
-2022-11-28 06:15:42,214 P6639 INFO Set up feature encoder...
-2022-11-28 06:15:42,216 P6639 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
-2022-11-28 06:15:42,221 P6639 INFO Loading data...
+2022-11-28 07:26:08,719 P17728 INFO Set up feature encoder...
+2022-11-28 07:26:08,719 P17728 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 07:26:08,720 P17728 INFO Loading data...
 Traceback (most recent call last):
   File "run_expid.py", line 77, in <module>
     train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
