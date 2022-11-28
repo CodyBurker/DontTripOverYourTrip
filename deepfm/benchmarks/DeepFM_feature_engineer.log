@@ -1,0 +1,1229 @@
+Enumerate all tuner configurations done.
+2022-11-28 06:13:42,125 P3499 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_001_838877cf",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:13:42,127 P3499 INFO Set up feature encoder...
+2022-11-28 06:13:42,128 P3499 INFO Reading file: ../data/train.csv
+2022-11-28 06:13:44,143 P3499 INFO Reading file: ../data/valid.csv
+2022-11-28 06:13:44,625 P3499 INFO Preprocess feature columns...
+2022-11-28 06:13:44,780 P3499 INFO Fit feature encoder...
+2022-11-28 06:13:44,781 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'user_id_Categorify', 'type': 'categorical'}
+2022-11-28 06:13:45,273 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'business_id_Categorify', 'type': 'categorical'}
+2022-11-28 06:13:45,353 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'bucketed_sentiment_scores_received_Categorify', 'type': 'categorical'}
+2022-11-28 06:13:45,390 P3499 INFO Processing column: {'active': True, 'dtype': 'str', 'name': 'postal_code_Categorify', 'type': 'categorical'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'average_stars', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'philly_reviews_Norm', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'philly_share_of_reviews', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'gender_score', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'business_stars', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'business_review_count_Norm', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_postal_code', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_business_id', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'TE_bucketed_sentiment_scores_received', 'type': 'numeric'}
+2022-11-28 06:13:45,440 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'CE_postal_code', 'type': 'numeric'}
+2022-11-28 06:13:45,441 P3499 INFO Processing column: {'active': True, 'dtype': 'float', 'name': 'CE_bucketed_sentiment_scores_received', 'type': 'numeric'}
+2022-11-28 06:13:45,441 P3499 INFO Set feature index...
+2022-11-28 06:13:45,441 P3499 INFO Pickle feature_encoder: ../data/yelp_feature_engineer_392d950c/feature_encoder.pkl
+2022-11-28 06:13:45,554 P3499 INFO Save feature_map to json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:13:45,562 P3499 INFO Set feature encoder done.
+2022-11-28 06:13:45,562 P3499 INFO Transform feature columns...
+2022-11-28 06:13:48,277 P3499 INFO Saving data to h5: ../data/yelp_feature_engineer_392d950c/train.h5
+2022-11-28 06:13:48,814 P3499 INFO Preprocess feature columns...
+Traceback (most recent call last):
+  File "run_expid.py", line 70, in <module>
+    datasets.build_dataset(feature_encoder, **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 152, in build_dataset
+    valid_ddf = feature_encoder.preprocess(valid_ddf)
+  File "../FuxiCTR-main/fuxictr/features.py", line 138, in preprocess
+    ddf[name] = self._fill_na(col, ddf[name])
+  File "../FuxiCTR-main/fuxictr/features.py", line 153, in _fill_na
+    raise RuntimeError("Feature column={} requires to assign na_value!".format(col["name"]))
+RuntimeError: Feature column=TE_business_id requires to assign na_value!
+2022-11-28 06:13:52,014 P3635 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_002_a0b57747",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:13:52,016 P3635 INFO Set up feature encoder...
+2022-11-28 06:13:52,017 P3635 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:13:52,018 P3635 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:13:57,075 P3771 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_003_2691b13e",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:13:57,077 P3771 INFO Set up feature encoder...
+2022-11-28 06:13:57,079 P3771 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:13:57,081 P3771 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:02,121 P3907 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_004_d81e53ff",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:02,123 P3907 INFO Set up feature encoder...
+2022-11-28 06:14:02,123 P3907 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:02,125 P3907 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:07,042 P4043 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_005_01776666",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:07,043 P4043 INFO Set up feature encoder...
+2022-11-28 06:14:07,044 P4043 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:07,045 P4043 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:12,087 P4179 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_006_4afc853f",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:12,089 P4179 INFO Set up feature encoder...
+2022-11-28 06:14:12,090 P4179 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:12,091 P4179 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:17,156 P4315 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_007_592ff8f8",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:17,158 P4315 INFO Set up feature encoder...
+2022-11-28 06:14:17,158 P4315 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:17,160 P4315 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:22,118 P4451 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_008_1ea52920",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:22,120 P4451 INFO Set up feature encoder...
+2022-11-28 06:14:22,120 P4451 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:22,122 P4451 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:27,170 P4591 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_009_3b6171e4",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:27,172 P4591 INFO Set up feature encoder...
+2022-11-28 06:14:27,172 P4591 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:27,173 P4591 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:32,175 P4729 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_010_b95132fa",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:32,177 P4729 INFO Set up feature encoder...
+2022-11-28 06:14:32,177 P4729 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:32,178 P4729 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:37,116 P4865 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_011_1095ad94",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:37,117 P4865 INFO Set up feature encoder...
+2022-11-28 06:14:37,118 P4865 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:37,119 P4865 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:42,121 P5001 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_012_50c47ac3",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:42,123 P5001 INFO Set up feature encoder...
+2022-11-28 06:14:42,123 P5001 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:42,124 P5001 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:47,181 P5137 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_013_fbc8fa87",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:47,183 P5137 INFO Set up feature encoder...
+2022-11-28 06:14:47,183 P5137 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:47,184 P5137 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:52,132 P5273 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_014_497ed86c",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:52,134 P5273 INFO Set up feature encoder...
+2022-11-28 06:14:52,137 P5273 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:52,140 P5273 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:14:57,189 P5409 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_015_5ed03a8a",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:14:57,191 P5409 INFO Set up feature encoder...
+2022-11-28 06:14:57,191 P5409 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:14:57,192 P5409 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:02,155 P5545 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_016_0fc50994",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:02,157 P5545 INFO Set up feature encoder...
+2022-11-28 06:15:02,157 P5545 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:02,158 P5545 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:07,157 P5681 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_017_cdde7079",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:07,159 P5681 INFO Set up feature encoder...
+2022-11-28 06:15:07,162 P5681 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:07,166 P5681 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:12,179 P5817 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_018_9d272ee9",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:12,181 P5817 INFO Set up feature encoder...
+2022-11-28 06:15:12,182 P5817 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:12,183 P5817 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:17,144 P5953 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_019_108da1fd",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:17,146 P5953 INFO Set up feature encoder...
+2022-11-28 06:15:17,146 P5953 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:17,148 P5953 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:22,169 P6089 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_020_ceabe936",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:22,170 P6089 INFO Set up feature encoder...
+2022-11-28 06:15:22,171 P6089 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:22,172 P6089 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:27,194 P6225 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_021_c38a4f91",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:27,195 P6225 INFO Set up feature encoder...
+2022-11-28 06:15:27,198 P6225 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:27,203 P6225 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:32,160 P6367 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "64",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_022_cd496676",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:32,162 P6367 INFO Set up feature encoder...
+2022-11-28 06:15:32,162 P6367 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:32,164 P6367 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:37,212 P6503 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "128",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_023_b274a372",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:37,214 P6503 INFO Set up feature encoder...
+2022-11-28 06:15:37,214 P6503 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:37,215 P6503 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
+2022-11-28 06:15:42,212 P6639 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_feature_engineer_392d950c",
+    "debug": "False",
+    "embedding_dim": "256",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id_Categorify', 'business_id_Categorify', 'bucketed_sentiment_scores_received_Categorify', 'postal_code_Categorify'], 'type': 'categorical'}, {'active': True, 'dtype': 'float', 'name': ['average_stars', 'philly_reviews_Norm', 'philly_share_of_reviews', 'gender_score', 'business_stars', 'business_review_count_Norm', 'TE_postal_code', 'TE_business_id', 'TE_bucketed_sentiment_scores_received', 'CE_postal_code', 'CE_bucketed_sentiment_scores_received'], 'type': 'numeric'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.01",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_feature_engineer_024_35a7311a",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-11-28 06:15:42,214 P6639 INFO Set up feature encoder...
+2022-11-28 06:15:42,216 P6639 INFO Load feature_map from json: ../data/yelp_feature_engineer_392d950c/feature_map.json
+2022-11-28 06:15:42,221 P6639 INFO Loading data...
+Traceback (most recent call last):
+  File "run_expid.py", line 77, in <module>
+    train_gen, valid_gen = datasets.h5_generator(feature_map, stage='train', **params)
+  File "../FuxiCTR-main/fuxictr/datasets/data_utils.py", line 195, in h5_generator
+    assert len(train_blocks) > 0 and len(valid_blocks) > 0, "invalid data files or paths."
+AssertionError: invalid data files or paths.
