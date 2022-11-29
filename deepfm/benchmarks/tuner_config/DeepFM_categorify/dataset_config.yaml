@@ -1,4 +1,4 @@
-yelp_categorify_3d3c8155:
+yelp_categorify_1fa21e1d:
     data_format: csv
     data_root: ../data/
     feature_cols:
@@ -10,7 +10,7 @@ yelp_categorify_3d3c8155:
     -   active: true
         dtype: float
         name: [average_stars, philly_reviews, philly_share_of_reviews, gender_score,
-            business_stars, business_review_count]
+            business_stars, business_review_count, positive_reviews_over_total_reviews]
         type: numeric
     label_col: {dtype: float, name: target}
     min_categr_count: 1

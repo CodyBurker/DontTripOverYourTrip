@@ -1,7 +1,7 @@
-DeepFM_yelp_categorify_001_dcf8c866:
+DeepFM_yelp_categorify_001_30c5a21f:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0
@@ -29,10 +29,10 @@ DeepFM_yelp_categorify_001_dcf8c866:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_002_7e0cdd40:
+DeepFM_yelp_categorify_002_31944aa6:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0
@@ -60,10 +60,10 @@ DeepFM_yelp_categorify_002_7e0cdd40:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_003_e5a67f05:
+DeepFM_yelp_categorify_003_40a7be1b:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0
@@ -91,10 +91,10 @@ DeepFM_yelp_categorify_003_e5a67f05:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_004_37080d73:
+DeepFM_yelp_categorify_004_46e8cbd2:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0
@@ -122,10 +122,10 @@ DeepFM_yelp_categorify_004_37080d73:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_005_58fe6466:
+DeepFM_yelp_categorify_005_5e8782ba:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0
@@ -153,10 +153,10 @@ DeepFM_yelp_categorify_005_58fe6466:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_006_c6b97738:
+DeepFM_yelp_categorify_006_5d67a593:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0
@@ -184,10 +184,10 @@ DeepFM_yelp_categorify_006_c6b97738:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_007_409238e2:
+DeepFM_yelp_categorify_007_8d3fba61:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0
@@ -215,10 +215,10 @@ DeepFM_yelp_categorify_007_409238e2:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_008_0bc30782:
+DeepFM_yelp_categorify_008_f44a0b36:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0
@@ -246,10 +246,10 @@ DeepFM_yelp_categorify_008_0bc30782:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_009_7d6f5f63:
+DeepFM_yelp_categorify_009_d9c680e7:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0
@@ -277,10 +277,10 @@ DeepFM_yelp_categorify_009_7d6f5f63:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_010_468c71fe:
+DeepFM_yelp_categorify_010_8aa8b2ab:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0
@@ -308,10 +308,10 @@ DeepFM_yelp_categorify_010_468c71fe:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_011_9856772a:
+DeepFM_yelp_categorify_011_50d06941:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0
@@ -339,10 +339,10 @@ DeepFM_yelp_categorify_011_9856772a:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_012_61f943e8:
+DeepFM_yelp_categorify_012_5123c80d:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0
@@ -370,10 +370,10 @@ DeepFM_yelp_categorify_012_61f943e8:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_013_1e8e9d8c:
+DeepFM_yelp_categorify_013_13ecf94a:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0.01
@@ -401,10 +401,10 @@ DeepFM_yelp_categorify_013_1e8e9d8c:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_014_c2ee7118:
+DeepFM_yelp_categorify_014_6a1e589d:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0.01
@@ -432,10 +432,10 @@ DeepFM_yelp_categorify_014_c2ee7118:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_015_dd70b14d:
+DeepFM_yelp_categorify_015_40deeae2:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0.01
@@ -463,10 +463,10 @@ DeepFM_yelp_categorify_015_dd70b14d:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_016_83d69d19:
+DeepFM_yelp_categorify_016_9dfd910e:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0.01
@@ -494,10 +494,10 @@ DeepFM_yelp_categorify_016_83d69d19:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_017_f4b5ee67:
+DeepFM_yelp_categorify_017_cdad9aab:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0.01
@@ -525,10 +525,10 @@ DeepFM_yelp_categorify_017_f4b5ee67:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_018_6dda4411:
+DeepFM_yelp_categorify_018_3db47ccc:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0.01
@@ -556,10 +556,10 @@ DeepFM_yelp_categorify_018_6dda4411:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_019_87824bbc:
+DeepFM_yelp_categorify_019_d2eec6bf:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0.01
@@ -587,10 +587,10 @@ DeepFM_yelp_categorify_019_87824bbc:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_020_e2251651:
+DeepFM_yelp_categorify_020_33a6784e:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0.01
@@ -618,10 +618,10 @@ DeepFM_yelp_categorify_020_e2251651:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_021_6694f923:
+DeepFM_yelp_categorify_021_0d6901b2:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0.01
@@ -649,10 +649,10 @@ DeepFM_yelp_categorify_021_6694f923:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_022_a914b115:
+DeepFM_yelp_categorify_022_c80389b1:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 64
     embedding_regularizer: 0.01
@@ -680,10 +680,10 @@ DeepFM_yelp_categorify_022_a914b115:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_023_8fae6ffb:
+DeepFM_yelp_categorify_023_b0edf980:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 128
     embedding_regularizer: 0.01
@@ -711,10 +711,10 @@ DeepFM_yelp_categorify_023_8fae6ffb:
     task: binary_classification
     use_hdf5: true
     verbose: 1
-DeepFM_yelp_categorify_024_fca5377e:
+DeepFM_yelp_categorify_024_be15eefd:
     batch_norm: false
     batch_size: 1024
-    dataset_id: yelp_categorify_3d3c8155
+    dataset_id: yelp_categorify_1fa21e1d
     debug: false
     embedding_dim: 256
     embedding_regularizer: 0.01
