@@ -95,7 +95,7 @@ yelp_feature_engineer:
     feature_cols:
         [{name: [user_id_Categorify, business_id_Categorify, bucketed_sentiment_scores_received_Categorify, postal_code_Categorify],
                  active: True, dtype: str, type: categorical},
-         {name: [average_stars, philly_reviews_Norm, philly_share_of_reviews, gender_score, 
+         {name: [average_stars, philly_reviews_Norm, philly_share_of_reviews, gender_score, positive_reviews_over_total_reviews, 
            business_stars, business_review_count_Norm, TE_postal_code, TE_business_id, TE_bucketed_sentiment_scores_received, CE_postal_code, CE_bucketed_sentiment_scores_received],
                  active: True, dtype: float, type: numeric}]
     label_col: {name: target, dtype: float}
