@@ -1,0 +1,108 @@
+2022-10-22 07:04:48,488 P28156 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_no_feature_3d3ae056",
+    "debug": "False",
+    "embedding_dim": "8",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_no_feature_014_31bc8f03",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-10-22 07:04:48,490 P28156 INFO Set up feature encoder...
+2022-10-22 07:04:48,491 P28156 INFO Load feature_map from json: ../data/yelp_no_feature_3d3ae056/feature_map.json
+2022-10-22 07:04:48,492 P28156 INFO Loading data...
+2022-10-22 07:04:48,496 P28156 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
+2022-10-22 07:04:48,607 P28156 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
+2022-10-22 07:04:48,642 P28156 INFO Train samples: total/684064, pos/472869, neg/211195, ratio/69.13%, blocks/1
+2022-10-22 07:04:48,642 P28156 INFO Validation samples: total/171016, pos/118244, neg/52772, ratio/69.14%, blocks/1
+2022-10-22 07:04:48,642 P28156 INFO Loading train data done.
+2022-10-22 07:04:51,107 P28156 INFO Total number of parameters: 2354288.
+2022-10-22 07:04:51,108 P28156 INFO Start training: 669 batches/epoch
+2022-10-22 07:04:51,108 P28156 INFO ************ Epoch=1 start ************
+2022-10-22 07:04:58,053 P28156 INFO [Metrics] logloss: 0.563381 - AUC: 0.707400
+2022-10-22 07:04:58,053 P28156 INFO Save best model: monitor(max): 0.144020
+2022-10-22 07:04:58,162 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:04:58,202 P28156 INFO Train loss: 0.628657
+2022-10-22 07:04:58,203 P28156 INFO ************ Epoch=1 end ************
+2022-10-22 07:05:04,216 P28156 INFO [Metrics] logloss: 0.552471 - AUC: 0.717023
+2022-10-22 07:05:04,217 P28156 INFO Save best model: monitor(max): 0.164552
+2022-10-22 07:05:04,353 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:04,397 P28156 INFO Train loss: 0.624429
+2022-10-22 07:05:04,398 P28156 INFO ************ Epoch=2 end ************
+2022-10-22 07:05:10,158 P28156 INFO [Metrics] logloss: 0.550819 - AUC: 0.721122
+2022-10-22 07:05:10,158 P28156 INFO Save best model: monitor(max): 0.170303
+2022-10-22 07:05:10,280 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:10,334 P28156 INFO Train loss: 0.623955
+2022-10-22 07:05:10,334 P28156 INFO ************ Epoch=3 end ************
+2022-10-22 07:05:16,269 P28156 INFO [Metrics] logloss: 0.550659 - AUC: 0.721853
+2022-10-22 07:05:16,270 P28156 INFO Save best model: monitor(max): 0.171193
+2022-10-22 07:05:16,392 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:16,442 P28156 INFO Train loss: 0.623328
+2022-10-22 07:05:16,443 P28156 INFO ************ Epoch=4 end ************
+2022-10-22 07:05:22,399 P28156 INFO [Metrics] logloss: 0.547371 - AUC: 0.723039
+2022-10-22 07:05:22,399 P28156 INFO Save best model: monitor(max): 0.175668
+2022-10-22 07:05:22,527 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:22,579 P28156 INFO Train loss: 0.621254
+2022-10-22 07:05:22,579 P28156 INFO ************ Epoch=5 end ************
+2022-10-22 07:05:28,316 P28156 INFO [Metrics] logloss: 0.547779 - AUC: 0.722621
+2022-10-22 07:05:28,317 P28156 INFO Monitor(max) STOP: 0.174842 !
+2022-10-22 07:05:28,317 P28156 INFO Reduce learning rate on plateau: 0.000100
+2022-10-22 07:05:28,317 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:28,370 P28156 INFO Train loss: 0.623846
+2022-10-22 07:05:28,370 P28156 INFO ************ Epoch=6 end ************
+2022-10-22 07:05:34,345 P28156 INFO [Metrics] logloss: 0.541979 - AUC: 0.737379
+2022-10-22 07:05:34,345 P28156 INFO Save best model: monitor(max): 0.195399
+2022-10-22 07:05:34,477 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:34,522 P28156 INFO Train loss: 0.545622
+2022-10-22 07:05:34,522 P28156 INFO ************ Epoch=7 end ************
+2022-10-22 07:05:40,319 P28156 INFO [Metrics] logloss: 0.553537 - AUC: 0.735039
+2022-10-22 07:05:40,320 P28156 INFO Monitor(max) STOP: 0.181502 !
+2022-10-22 07:05:40,320 P28156 INFO Reduce learning rate on plateau: 0.000010
+2022-10-22 07:05:40,320 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:40,367 P28156 INFO Train loss: 0.497913
+2022-10-22 07:05:40,367 P28156 INFO ************ Epoch=8 end ************
+2022-10-22 07:05:46,229 P28156 INFO [Metrics] logloss: 0.584904 - AUC: 0.731963
+2022-10-22 07:05:46,229 P28156 INFO Monitor(max) STOP: 0.147059 !
+2022-10-22 07:05:46,229 P28156 INFO Reduce learning rate on plateau: 0.000001
+2022-10-22 07:05:46,229 P28156 INFO Early stopping at epoch=9
+2022-10-22 07:05:46,230 P28156 INFO --- 669/669 batches finished ---
+2022-10-22 07:05:46,273 P28156 INFO Train loss: 0.427208
+2022-10-22 07:05:46,273 P28156 INFO Training finished.
+2022-10-22 07:05:46,273 P28156 INFO Load best model: /root/w210_proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_014_31bc8f03.model
+2022-10-22 07:05:46,367 P28156 INFO ****** Validation evaluation ******
+2022-10-22 07:05:49,131 P28156 INFO [Metrics] logloss: 0.450930 - AUC: 0.841394
+2022-10-22 07:05:49,973 P28156 INFO [Metrics] logloss: 0.541979 - AUC: 0.737379
+2022-10-22 07:05:50,049 P28156 INFO ******** Test evaluation ********
+2022-10-22 07:05:50,050 P28156 INFO Loading data...
+2022-10-22 07:05:50,052 P28156 INFO Loading test data done.

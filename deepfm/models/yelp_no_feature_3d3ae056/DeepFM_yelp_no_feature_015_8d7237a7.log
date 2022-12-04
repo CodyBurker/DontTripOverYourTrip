@@ -1,0 +1,103 @@
+2022-10-22 07:05:53,602 P32353 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_no_feature_3d3ae056",
+    "debug": "False",
+    "embedding_dim": "16",
+    "embedding_regularizer": "0.01",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_no_feature_015_8d7237a7",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-10-22 07:05:53,604 P32353 INFO Set up feature encoder...
+2022-10-22 07:05:53,604 P32353 INFO Load feature_map from json: ../data/yelp_no_feature_3d3ae056/feature_map.json
+2022-10-22 07:05:53,605 P32353 INFO Loading data...
+2022-10-22 07:05:53,609 P32353 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
+2022-10-22 07:05:53,710 P32353 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
+2022-10-22 07:05:53,745 P32353 INFO Train samples: total/684064, pos/472869, neg/211195, ratio/69.13%, blocks/1
+2022-10-22 07:05:53,745 P32353 INFO Validation samples: total/171016, pos/118244, neg/52772, ratio/69.14%, blocks/1
+2022-10-22 07:05:53,745 P32353 INFO Loading train data done.
+2022-10-22 07:05:56,275 P32353 INFO Total number of parameters: 4161832.
+2022-10-22 07:05:56,275 P32353 INFO Start training: 669 batches/epoch
+2022-10-22 07:05:56,275 P32353 INFO ************ Epoch=1 start ************
+2022-10-22 07:06:03,734 P32353 INFO [Metrics] logloss: 0.557803 - AUC: 0.707294
+2022-10-22 07:06:03,734 P32353 INFO Save best model: monitor(max): 0.149490
+2022-10-22 07:06:03,876 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:03,914 P32353 INFO Train loss: 0.638621
+2022-10-22 07:06:03,914 P32353 INFO ************ Epoch=1 end ************
+2022-10-22 07:06:10,444 P32353 INFO [Metrics] logloss: 0.551652 - AUC: 0.717781
+2022-10-22 07:06:10,445 P32353 INFO Save best model: monitor(max): 0.166129
+2022-10-22 07:06:10,613 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:10,664 P32353 INFO Train loss: 0.637175
+2022-10-22 07:06:10,664 P32353 INFO ************ Epoch=2 end ************
+2022-10-22 07:06:17,093 P32353 INFO [Metrics] logloss: 0.551323 - AUC: 0.721224
+2022-10-22 07:06:17,093 P32353 INFO Save best model: monitor(max): 0.169901
+2022-10-22 07:06:17,266 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:17,313 P32353 INFO Train loss: 0.629335
+2022-10-22 07:06:17,313 P32353 INFO ************ Epoch=3 end ************
+2022-10-22 07:06:23,759 P32353 INFO [Metrics] logloss: 0.547477 - AUC: 0.724458
+2022-10-22 07:06:23,760 P32353 INFO Save best model: monitor(max): 0.176981
+2022-10-22 07:06:23,979 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:24,028 P32353 INFO Train loss: 0.623480
+2022-10-22 07:06:24,028 P32353 INFO ************ Epoch=4 end ************
+2022-10-22 07:06:30,588 P32353 INFO [Metrics] logloss: 0.547752 - AUC: 0.723185
+2022-10-22 07:06:30,589 P32353 INFO Monitor(max) STOP: 0.175434 !
+2022-10-22 07:06:30,589 P32353 INFO Reduce learning rate on plateau: 0.000100
+2022-10-22 07:06:30,589 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:30,636 P32353 INFO Train loss: 0.629611
+2022-10-22 07:06:30,637 P32353 INFO ************ Epoch=5 end ************
+2022-10-22 07:06:37,081 P32353 INFO [Metrics] logloss: 0.540309 - AUC: 0.738543
+2022-10-22 07:06:37,082 P32353 INFO Save best model: monitor(max): 0.198234
+2022-10-22 07:06:37,249 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:37,295 P32353 INFO Train loss: 0.552522
+2022-10-22 07:06:37,296 P32353 INFO ************ Epoch=6 end ************
+2022-10-22 07:06:43,933 P32353 INFO [Metrics] logloss: 0.547179 - AUC: 0.737355
+2022-10-22 07:06:43,933 P32353 INFO Monitor(max) STOP: 0.190176 !
+2022-10-22 07:06:43,933 P32353 INFO Reduce learning rate on plateau: 0.000010
+2022-10-22 07:06:43,934 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:43,988 P32353 INFO Train loss: 0.509777
+2022-10-22 07:06:43,988 P32353 INFO ************ Epoch=7 end ************
+2022-10-22 07:06:50,509 P32353 INFO [Metrics] logloss: 0.578225 - AUC: 0.735248
+2022-10-22 07:06:50,510 P32353 INFO Monitor(max) STOP: 0.157023 !
+2022-10-22 07:06:50,510 P32353 INFO Reduce learning rate on plateau: 0.000001
+2022-10-22 07:06:50,510 P32353 INFO Early stopping at epoch=8
+2022-10-22 07:06:50,510 P32353 INFO --- 669/669 batches finished ---
+2022-10-22 07:06:50,564 P32353 INFO Train loss: 0.435859
+2022-10-22 07:06:50,564 P32353 INFO Training finished.
+2022-10-22 07:06:50,564 P32353 INFO Load best model: /root/w210_proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_015_8d7237a7.model
+2022-10-22 07:06:50,657 P32353 INFO ****** Validation evaluation ******
+2022-10-22 07:06:53,452 P32353 INFO [Metrics] logloss: 0.460927 - AUC: 0.831406
+2022-10-22 07:06:54,422 P32353 INFO [Metrics] logloss: 0.540309 - AUC: 0.738543
+2022-10-22 07:06:54,498 P32353 INFO ******** Test evaluation ********
+2022-10-22 07:06:54,498 P32353 INFO Loading data...
+2022-10-22 07:06:54,501 P32353 INFO Loading test data done.

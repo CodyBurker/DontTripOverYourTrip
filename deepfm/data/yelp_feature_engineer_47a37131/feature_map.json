@@ -1,0 +1,92 @@
+{
+    "dataset_id": "yelp_feature_engineer_47a37131",
+    "num_fields": 16,
+    "num_features": 225208,
+    "input_length": 16,
+    "feature_specs": {
+        "user_id_Categorify": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 214745,
+            "index": 0
+        },
+        "business_id_Categorify": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 10391,
+            "index": 1
+        },
+        "bucketed_sentiment_scores_received_Categorify": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 7,
+            "index": 2
+        },
+        "postal_code_Categorify": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 53,
+            "index": 3
+        },
+        "average_stars": {
+            "source": "",
+            "type": "numeric",
+            "index": 4
+        },
+        "philly_reviews_Norm": {
+            "source": "",
+            "type": "numeric",
+            "index": 5
+        },
+        "philly_share_of_reviews": {
+            "source": "",
+            "type": "numeric",
+            "index": 6
+        },
+        "gender_score": {
+            "source": "",
+            "type": "numeric",
+            "index": 7
+        },
+        "positive_reviews_over_total_reviews": {
+            "source": "",
+            "type": "numeric",
+            "index": 8
+        },
+        "business_stars": {
+            "source": "",
+            "type": "numeric",
+            "index": 9
+        },
+        "business_review_count_Norm": {
+            "source": "",
+            "type": "numeric",
+            "index": 10
+        },
+        "TE_postal_code": {
+            "source": "",
+            "type": "numeric",
+            "index": 11
+        },
+        "TE_business_id": {
+            "source": "",
+            "type": "numeric",
+            "index": 12
+        },
+        "TE_bucketed_sentiment_scores_received": {
+            "source": "",
+            "type": "numeric",
+            "index": 13
+        },
+        "CE_postal_code": {
+            "source": "",
+            "type": "numeric",
+            "index": 14
+        },
+        "CE_bucketed_sentiment_scores_received": {
+            "source": "",
+            "type": "numeric",
+            "index": 15
+        }
+    }
+}

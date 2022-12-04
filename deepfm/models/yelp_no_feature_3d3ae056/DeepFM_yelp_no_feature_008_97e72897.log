@@ -1,0 +1,77 @@
+2022-10-22 07:00:13,232 P12623 INFO {
+    "batch_norm": "False",
+    "batch_size": "1024",
+    "data_format": "csv",
+    "data_root": "../data/",
+    "dataset_id": "yelp_no_feature_3d3ae056",
+    "debug": "False",
+    "embedding_dim": "8",
+    "embedding_regularizer": "0",
+    "epochs": "50",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'str', 'name': ['user_id', 'business_id'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'target'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['logloss', 'AUC']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "DeepFM_yelp_no_feature_008_97e72897",
+    "model_root": "../models/",
+    "monitor": "{'AUC': 1, 'logloss': -1}",
+    "monitor_mode": "max",
+    "net_dropout": "0.03",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2019",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "train_data": "../data/train.csv",
+    "use_hdf5": "True",
+    "valid_data": "../data/valid.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2022-10-22 07:00:13,234 P12623 INFO Set up feature encoder...
+2022-10-22 07:00:13,234 P12623 INFO Load feature_map from json: ../data/yelp_no_feature_3d3ae056/feature_map.json
+2022-10-22 07:00:13,235 P12623 INFO Loading data...
+2022-10-22 07:00:13,238 P12623 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/train.h5
+2022-10-22 07:00:13,340 P12623 INFO Loading data from h5: ../data/yelp_no_feature_3d3ae056/valid.h5
+2022-10-22 07:00:13,381 P12623 INFO Train samples: total/684064, pos/472869, neg/211195, ratio/69.13%, blocks/1
+2022-10-22 07:00:13,382 P12623 INFO Validation samples: total/171016, pos/118244, neg/52772, ratio/69.14%, blocks/1
+2022-10-22 07:00:13,382 P12623 INFO Loading train data done.
+2022-10-22 07:00:15,826 P12623 INFO Total number of parameters: 2354288.
+2022-10-22 07:00:15,826 P12623 INFO Start training: 669 batches/epoch
+2022-10-22 07:00:15,826 P12623 INFO ************ Epoch=1 start ************
+2022-10-22 07:00:22,314 P12623 INFO [Metrics] logloss: 0.534298 - AUC: 0.742757
+2022-10-22 07:00:22,314 P12623 INFO Save best model: monitor(max): 0.208459
+2022-10-22 07:00:22,421 P12623 INFO --- 669/669 batches finished ---
+2022-10-22 07:00:22,457 P12623 INFO Train loss: 0.552566
+2022-10-22 07:00:22,457 P12623 INFO ************ Epoch=1 end ************
+2022-10-22 07:00:27,949 P12623 INFO [Metrics] logloss: 0.550061 - AUC: 0.729349
+2022-10-22 07:00:27,950 P12623 INFO Monitor(max) STOP: 0.179288 !
+2022-10-22 07:00:27,950 P12623 INFO Reduce learning rate on plateau: 0.000100
+2022-10-22 07:00:27,950 P12623 INFO --- 669/669 batches finished ---
+2022-10-22 07:00:27,989 P12623 INFO Train loss: 0.440581
+2022-10-22 07:00:27,989 P12623 INFO ************ Epoch=2 end ************
+2022-10-22 07:00:33,482 P12623 INFO [Metrics] logloss: 0.624481 - AUC: 0.701775
+2022-10-22 07:00:33,482 P12623 INFO Monitor(max) STOP: 0.077294 !
+2022-10-22 07:00:33,482 P12623 INFO Reduce learning rate on plateau: 0.000010
+2022-10-22 07:00:33,482 P12623 INFO Early stopping at epoch=3
+2022-10-22 07:00:33,482 P12623 INFO --- 669/669 batches finished ---
+2022-10-22 07:00:33,528 P12623 INFO Train loss: 0.387033
+2022-10-22 07:00:33,529 P12623 INFO Training finished.
+2022-10-22 07:00:33,529 P12623 INFO Load best model: /root/w210_proj/deepfm/models/yelp_no_feature_3d3ae056/DeepFM_yelp_no_feature_008_97e72897.model
+2022-10-22 07:00:33,620 P12623 INFO ****** Validation evaluation ******
+2022-10-22 07:00:36,367 P12623 INFO [Metrics] logloss: 0.460570 - AUC: 0.839072
+2022-10-22 07:00:37,207 P12623 INFO [Metrics] logloss: 0.534298 - AUC: 0.742757
+2022-10-22 07:00:37,280 P12623 INFO ******** Test evaluation ********
+2022-10-22 07:00:37,280 P12623 INFO Loading data...
+2022-10-22 07:00:37,281 P12623 INFO Loading test data done.

@@ -1,0 +1,40 @@
+{
+    "dataset_id": "yelp_user_feature_2ccba91b",
+    "num_fields": 6,
+    "num_features": 225140,
+    "input_length": 6,
+    "feature_specs": {
+        "user_id": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 214745,
+            "index": 0
+        },
+        "business_id": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 10391,
+            "index": 1
+        },
+        "average_stars": {
+            "source": "",
+            "type": "numeric",
+            "index": 2
+        },
+        "philly_reviews": {
+            "source": "",
+            "type": "numeric",
+            "index": 3
+        },
+        "philly_share_of_reviews": {
+            "source": "",
+            "type": "numeric",
+            "index": 4
+        },
+        "gender_score": {
+            "source": "",
+            "type": "numeric",
+            "index": 5
+        }
+    }
+}
