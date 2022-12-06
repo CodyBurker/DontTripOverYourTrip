@@ -1,0 +1,888 @@
+DCNv2_yelp_all_feature_001_930e5a9a:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_002_89aa758c:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_003_412edbff:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_004_0cc15d3c:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_005_bb120b31:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_006_08049550:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_007_191d8800:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_008_5d28f270:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_009_d0ef95d1:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_010_0545a4d0:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_011_278e3000:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_012_dd489816:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_013_7dc47d41:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_014_36b2785a:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_015_4a56f3f1:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_016_3c3ca916:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_017_3d8a06c2:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_018_76ea57b0:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_019_450b8487:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_020_a598f545:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_021_285dc2b6:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_022_c5cbfc1a:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_023_4ed71496:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1
+DCNv2_yelp_all_feature_024_fb958333:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_all_feature_3b73051a
+    debug: false
+    dnn_activations: relu
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    low_rank: 32
+    metrics: [logloss, AUC]
+    model: DCNv2
+    model_id: DCNv2_base
+    model_root: ../models/
+    model_structure: parallel
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_cross_layers: 3
+    num_experts: 4
+    num_workers: 3
+    optimizer: adam
+    parallel_dnn_hidden_units: [500, 500, 500]
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    stacked_dnn_hidden_units: [500, 500, 500]
+    task: binary_classification
+    use_hdf5: true
+    use_low_rank_mixture: false
+    verbose: 1

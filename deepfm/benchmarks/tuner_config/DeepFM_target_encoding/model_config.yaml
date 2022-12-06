@@ -1,0 +1,744 @@
+DeepFM_yelp_target_encoding_001_f722b300:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_002_c9567229:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_003_9e76f344:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_004_ef2a1424:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_005_8fe3b01c:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_006_8cb856c3:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_007_75e70031:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_008_4360451b:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_009_836c54c2:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_010_c763e306:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_011_ce3dc48c:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_012_ff4c2ac8:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_013_03d4bf76:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_014_4ebcb635:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_015_43251bd2:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_016_9235b88a:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_017_d27aae5e:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_018_de4d94b8:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_019_d359d751:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_020_fec73876:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_021_cd9a9e1c:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_022_94f9e2ff:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_023_d676d24e:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 128
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
+DeepFM_yelp_target_encoding_024_c9bc0566:
+    batch_norm: false
+    batch_size: 1024
+    dataset_id: yelp_target_encoding_28987035
+    debug: false
+    embedding_dim: 256
+    embedding_regularizer: 0.01
+    epochs: 50
+    every_x_epochs: 1
+    hidden_activations: relu
+    hidden_units: [400, 400, 400]
+    learning_rate: 0.01
+    loss: binary_crossentropy
+    metrics: [logloss, AUC]
+    model: DeepFM
+    model_id: DeepFM_base
+    model_root: ../models/
+    monitor: {AUC: 1, logloss: -1}
+    monitor_mode: max
+    net_dropout: 0.03
+    net_regularizer: 0
+    num_workers: 3
+    optimizer: adam
+    patience: 2
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 2019
+    shuffle: true
+    task: binary_classification
+    use_hdf5: true
+    verbose: 1
